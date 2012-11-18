@@ -36,8 +36,6 @@ public abstract class Board {
 		return sb.toString();
 	}
 
-	// pieces:
-
 	protected Map<String, Field> createLookup() {
 		Map<String, Field> lookup = new ConcurrentHashMap<String, Field>();
 		for (Lattice.Level level : getLattice().getLevels()) {
@@ -50,9 +48,8 @@ public abstract class Board {
 		return lookup;
 	}
 
-	public void place(String pieceId, String fieldId) {
-		lookup.get(fieldId).place(new Piece(pieceId));
+	public void place(Colour colour, String fieldId) {
+		lookup.get(fieldId).place(new Piece(colour));
 	}
-
 
 }

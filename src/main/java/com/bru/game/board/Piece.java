@@ -1,19 +1,25 @@
 package com.bru.game.board;
 
+import java.util.concurrent.atomic.AtomicLong;
+
 /**
  * User: Alex
  * Date: 18/11/12
  * Time: 18:29
  */
 public class Piece {
-	private final String id;
-	static final Piece EMPTY = new Piece("----");
 
-	public Piece(String id) {
-		this.id = id;
+	private static final AtomicLong cnt = new AtomicLong();
+	private final long id;
+	private final Colour colour;
+	public static final String EMPTY = "------";     //TODO
+
+	public Piece(Colour colour) {
+		this.id = cnt.incrementAndGet();
+		this.colour = colour;
 	}
 
 	public String toString() {
-		return id;
+		return String.format("<%s%03d>", colour.getDisplay(), id);
 	}
 }

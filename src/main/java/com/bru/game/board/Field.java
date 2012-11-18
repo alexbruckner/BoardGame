@@ -18,7 +18,6 @@ public class Field {
 	public Field(String id) {
 		this.id = id;
 		this.neighbours = new CopyOnWriteArraySet<Field>();
-		this.piece = Piece.EMPTY;
 	}
 
 	public String getId() {
@@ -39,7 +38,7 @@ public class Field {
 	}
 
 	public String toString(){
-		return String.format("%s:%s", id, piece);
+		return String.format("%s:%s", id, piece == null ? Piece.EMPTY :piece);
 	}
 
 	@Override
