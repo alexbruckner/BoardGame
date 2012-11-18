@@ -12,12 +12,9 @@ public class SquareBoard extends Board {
 		this.width = width;
 	}
 
-	public int getWidth() {
-		return width;
-	}
-
 	@Override
-	Field[][] createBoard() {
+	Lattice createLattice() {
+
 		Field[][] fields = new Field[width][width];
 		for (int i = 0; i < width; i++) {
 			for (int j = 0; j < width; j++) {
@@ -25,7 +22,10 @@ public class SquareBoard extends Board {
 				setNeighbours(fields, i, j);
 			}
 		}
-		return fields;
+
+		Lattice lattice = new Lattice();
+		lattice.addLevel(fields);
+		return lattice;
 	}
 
 	private void setNeighbours(Field[][] fields, int i, int j) {
