@@ -12,7 +12,9 @@ public class SquareBoardTest {
 
 	@Test
 	public void test(){
-		Board board = new SquareBoard(10);
+		Board board = new SquareBoard(4);
+		System.out.println(board);
+		board.place("<1B>", "2-2");
 		System.out.println(board);
 	}
 

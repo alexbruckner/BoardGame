@@ -1,5 +1,8 @@
 package com.bru.game.board;
 
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
+
 /**
  * User: Alex
  * Date: 18/11/12
@@ -8,26 +11,43 @@ package com.bru.game.board;
 public abstract class Board {
 
 	private Field[][] fields;
+	private Map<String, Field> lookup;
 
 	private Field[][] getFields(){
 		if (fields == null){
 			fields = createBoard();
+			lookup = createLookup();
 		}
 		return fields;
 	}
 
-	// return the ROOT Field of all linked Fields that make up the board
 	abstract Field[][] createBoard();
 
 	public String toString(){
 		StringBuilder sb = new StringBuilder();
 		for (Field[] column : getFields()){
 			for (Field row : column) {
-				sb.append(row.toString());
+				sb.append("[").append(row.toString()).append("]");
 			}
 			sb.append("\n");
 		}
 		return sb.toString();
+	}
+
+	// pieces:
+
+	protected Map<String,Field> createLookup(){
+		Map<String, Field> lookup = new ConcurrentHashMap<String, Field>();
+		for (Field[] column : getFields()){
+			for (Field row : column) {
+				lookup.put(row.getId(), row);
+			}
+		}
+		return lookup;
+	}
+
+	public void place(String pieceId, String fieldId){
+		lookup.get(fieldId).place(new Piece(pieceId));
 	}
 
 

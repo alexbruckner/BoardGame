@@ -17,13 +17,23 @@ public class SquareBoard extends Board {
 	}
 
 	@Override
-	Field[][] createBoard() {  //TODO neighbours!
+	Field[][] createBoard() {
 		Field[][] fields = new Field[width][width];
 		for (int i = 0; i < width; i++) {
 			for (int j = 0; j < width; j++) {
  				fields[i][j] = new Field(String.format("%s-%s", i, j));
+				setNeighbours(fields, i, j);
 			}
 		}
 		return fields;
+	}
+
+	private void setNeighbours(Field[][] fields, int i, int j) {
+		if (i > 0){
+			fields[i-1][j].addNeightbour(fields[i][j]);
+		}
+		if (j > 0){
+			fields[i][j-1].addNeightbour(fields[i][j]);
+		}
 	}
 }
