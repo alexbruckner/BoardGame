@@ -1,5 +1,6 @@
 package com.bru.game.board;
 
+import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -14,11 +15,20 @@ public abstract class Board {
 	private Map<String, Field> lookup;
 
 	private Lattice getLattice() {
+		init();
+		return lattice;
+	}
+
+	private Map<String, Field> getLookup(){
+		init();
+		return lookup;
+	}
+
+	private void init(){
 		if (lattice == null) {
 			lattice = createLattice();
 			lookup = createLookup();
 		}
-		return lattice;
 	}
 
 	abstract Lattice createLattice();
@@ -32,6 +42,7 @@ public abstract class Board {
 				}
 				sb.append("\n");
 			}
+			sb.append("\n");
 		}
 		return sb.toString();
 	}
@@ -49,7 +60,11 @@ public abstract class Board {
 	}
 
 	public void place(Colour colour, String fieldId) {
-		lookup.get(fieldId).place(new Piece(colour));
+		getLookup().get(fieldId).place(new Piece(colour));
+	}
+
+	protected List<Lattice.Level> getLevels(){
+		return getLattice().getLevels();
 	}
 
 }

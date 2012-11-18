@@ -22,4 +22,8 @@ public class Piece {
 	public String toString() {
 		return String.format("<%s%03d>", colour.getDisplay(), id);
 	}
+
+	public Colour getColour() {
+		return colour;
+	}
 }

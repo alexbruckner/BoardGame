@@ -1,6 +1,5 @@
 package com.bru.game.board;
 
-import java.util.HashSet;
 import java.util.Set;
 import java.util.concurrent.CopyOnWriteArraySet;
 
@@ -24,13 +23,13 @@ public class Field {
 		return id;
 	}
 
-	public Set<String> getNeighbourIds() {
-		Set<String> neighbourIds = new HashSet<String>();
-		for (Field neighbour : neighbours){
-			neighbourIds.add(neighbour.id);
-		}
-		return neighbourIds;
-	}
+//	public Set<String> getNeighbourIds() {
+//		Set<String> neighbourIds = new HashSet<String>();
+//		for (Field neighbour : neighbours){
+//			neighbourIds.add(neighbour.id);
+//		}
+//		return neighbourIds;
+//	}
 
 	public void addNeightbour(Field field){
 		neighbours.add(field);
@@ -55,5 +54,9 @@ public class Field {
 
 	public void place(Piece piece) {
 	  	this.piece = piece;
+	}
+
+	public Piece getPiece() {
+		return piece;
 	}
 }
