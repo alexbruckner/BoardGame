@@ -19,7 +19,7 @@ public class SquareBoardTest {
 
 		System.out.println(board);
 		Display display = new Display(board);
-		display.print();
+		System.out.println(display);
 
 	}
 
