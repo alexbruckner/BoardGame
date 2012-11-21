@@ -31,8 +31,8 @@ public class Display {
 		}
 		sb.deleteCharAt(sb.length()-1);
 		sb.deleteCharAt(sb.length()-1);
-		sb.append(String.format("%n  %s%n", Utils.repeat("---", cols, "")));
-		sb.append(String.format("   %s%n", Utils.range(0, cols - 1, "  ")));
+		sb.append(String.format("\n  %s\n", Utils.repeat("---", cols, "")));
+		sb.append(String.format("   %s\n", Utils.range(0, cols - 1, "  ")));
 		return sb.toString();
 	}
 

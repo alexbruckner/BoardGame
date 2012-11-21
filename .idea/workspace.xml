@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="75b5bd26-2fe4-4454-bb3e-2b9f770f4b81" name="Default" comment="display enhancements (new Display class)">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BoardGame.iml" afterPath="$PROJECT_DIR$/BoardGame.iml" />
+    <list default="true" id="75b5bd26-2fe4-4454-bb3e-2b9f770f4b81" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bru/game/board/Display.java" afterPath="$PROJECT_DIR$/src/main/java/com/bru/game/board/Display.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/bru/game/board/SquareBoardTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/bru/game/board/SquareBoardTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="BoardGame.iws" />
     <ignored path=".idea/workspace.xml" />
+    <file path="/SquareBoardTest.java" changelist="75b5bd26-2fe4-4454-bb3e-2b9f770f4b81" time="1353529312538" ignored="false" />
+    <file path="/Dummy.txt" changelist="75b5bd26-2fe4-4454-bb3e-2b9f770f4b81" time="1353529147893" ignored="false" />
     <file path="/Display.java" changelist="75b5bd26-2fe4-4454-bb3e-2b9f770f4b81" time="1353529090523" ignored="false" />
-    <file path="/SquareBoardTest.java" changelist="75b5bd26-2fe4-4454-bb3e-2b9f770f4b81" time="1353528862078" ignored="false" />
-    <file path="/Dummy.txt" changelist="75b5bd26-2fe4-4454-bb3e-2b9f770f4b81" time="1353528787967" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,8 +92,10 @@
       <file leaf-file-name="SquareBoardTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/bru/game/board/SquareBoardTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="23" selection-start="442" selection-end="442" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="29" column="32" selection-start="631" selection-end="631" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -112,7 +112,7 @@
       <file leaf-file-name="Display.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/bru/game/board/Display.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="35" selection-start="805" selection-end="805" vertical-scroll-proportion="0.7381818">
+            <state line="33" column="34" selection-start="804" selection-end="804" vertical-scroll-proportion="0.7381818">
               <folding />
             </state>
           </provider>
@@ -362,7 +362,7 @@
     <task active="true" id="Default" summary="Default task">
       <changelist id="75b5bd26-2fe4-4454-bb3e-2b9f770f4b81" name="Default" comment="" />
       <created>1353255010858</created>
-      <timeSpent>345000</timeSpent>
+      <timeSpent>840000</timeSpent>
       <updated>1353255010858</updated>
     </task>
     <task id="LOCAL-00001" summary="init">
@@ -385,8 +385,12 @@
       <created>1353276682240</created>
       <updated>1353276682240</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
-    <option name="myTotallyTimeSpent" value="345000" />
+    <task id="LOCAL-00006" summary="display toString">
+      <created>1353529151908</created>
+      <updated>1353529151908</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <option name="myTotallyTimeSpent" value="840000" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -451,7 +455,7 @@
     <option name="SHOW_DIRTY_RECURSIVELY" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="display enhancements (new Display class)" />
+    <option name="LAST_COMMIT_MESSAGE" value="display toString" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -469,6 +473,7 @@
     <MESSAGE value="board-&gt;lattice for 3d stuff later" />
     <MESSAGE value="display changes" />
     <MESSAGE value="display enhancements (new Display class)" />
+    <MESSAGE value="display toString" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -580,14 +585,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/bru/game/board/SquareBoardTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="23" selection-start="442" selection-end="442" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="29" column="32" selection-start="631" selection-end="631" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bru/game/board/Display.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="35" selection-start="805" selection-end="805" vertical-scroll-proportion="0.7381818">
+        <state line="33" column="34" selection-start="804" selection-end="804" vertical-scroll-proportion="0.7381818">
           <folding />
         </state>
       </provider>

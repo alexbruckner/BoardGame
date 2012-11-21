@@ -1,5 +1,6 @@
 package com.bru.game.board;
 
+import org.junit.Assert;
 import org.junit.Test;
 
 /**
@@ -21,6 +22,12 @@ public class SquareBoardTest {
 		Display display = new Display(board);
 		System.out.println(display);
 
+		Assert.assertEquals("0|[-][-][-][-]\n" +
+				"1|[-][-][B][-]\n" +
+				"2|[-][-][B][W]\n" +
+				"3|[-][-][-][-]\n" +
+				"  ------------\n" +
+				"   0  1  2  3  \n", display.toString());
 	}
 
 
