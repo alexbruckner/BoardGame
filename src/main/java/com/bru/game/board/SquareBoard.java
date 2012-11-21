@@ -9,6 +9,9 @@ public class SquareBoard extends Board {
 	private final int width;
 
 	public SquareBoard(int width) {
+		if (width <= 0) {
+			throw new BoardException("width must be > 0");
+		}
 		this.width = width;
 	}
 

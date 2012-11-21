@@ -31,26 +31,25 @@ public class SquareBoardTest {
 				"   0  1  2  3  \n", display.toString());
 	}
 
-	@Test
-	public void testZeroSizeLatticeLevel(){
+	@Test(expected = BoardException.class)
+	public void testZeroSizeLatticeLevel() {
 		new SquareBoard(0);
 	}
 
 	@Test(expected = BoardException.class)
-	public void testZeroSizeLatticeLevelWithCall(){
+	public void testZeroSizeLatticeLevelWithCall() {
 		System.out.println(new SquareBoard(0));
 	}
 
 	@Test
-	public void testSizeOneLatticeLevel(){
+	public void testSizeOneLatticeLevel() {
 		Assert.assertEquals("[0-0:------]\n\n", new SquareBoard(1).toString());
 	}
 
 	@Test(expected = BoardException.class)
-	public void testSizeOneLatticeLevelOutOfBoundsPlay(){
+	public void testSizeOneLatticeLevelOutOfBoundsPlay() {
 		Board board = new SquareBoard(1);
 		board.place(Colour.BLACK, "2-2");
-		System.out.println(board);
 	}
 
 }
