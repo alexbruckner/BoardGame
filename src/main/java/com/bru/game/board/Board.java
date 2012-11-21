@@ -29,6 +29,9 @@ public abstract class Board {
 			lattice = createLattice();
 			lookup = createLookup();
 		}
+		if(lattice.getLevels().get(0).getFields().length == 0) {
+			throw new BoardException("Size of lattice must be at least 1.");
+		}
 	}
 
 	abstract Lattice createLattice();
@@ -59,8 +62,13 @@ public abstract class Board {
 		return lookup;
 	}
 
-	public void place(Colour colour, String fieldId) {
-		getLookup().get(fieldId).place(new Piece(colour));
+	public void place(Colour colour, String fieldId) throws BoardException{
+		Field field = getLookup().get(fieldId);
+		if (field != null){
+			field.place(new Piece(colour));
+		} else {
+			throw new BoardException(String.format("Field [%s] is not part of this board.", fieldId));
+		}
 	}
 
 	protected List<Lattice.Level> getLevels(){

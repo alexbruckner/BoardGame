@@ -2,14 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75b5bd26-2fe4-4454-bb3e-2b9f770f4b81" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bru/game/board/Display.java" afterPath="$PROJECT_DIR$/src/main/java/com/bru/game/board/Display.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/bru/game/board/BoardException.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bru/game/board/Board.java" afterPath="$PROJECT_DIR$/src/main/java/com/bru/game/board/Board.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/bru/game/board/SquareBoardTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/bru/game/board/SquareBoardTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="BoardGame.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/SquareBoardTest.java" changelist="75b5bd26-2fe4-4454-bb3e-2b9f770f4b81" time="1353529312538" ignored="false" />
-    <file path="/Dummy.txt" changelist="75b5bd26-2fe4-4454-bb3e-2b9f770f4b81" time="1353529147893" ignored="false" />
+    <file path="/Board.java" changelist="75b5bd26-2fe4-4454-bb3e-2b9f770f4b81" time="1353531022952" ignored="false" />
+    <file path="/SquareBoardTest.java" changelist="75b5bd26-2fe4-4454-bb3e-2b9f770f4b81" time="1353531001082" ignored="false" />
+    <file path="/BoardException.java" changelist="75b5bd26-2fe4-4454-bb3e-2b9f770f4b81" time="1353530814445" ignored="false" />
+    <file path="/Dummy.txt" changelist="75b5bd26-2fe4-4454-bb3e-2b9f770f4b81" time="1353529639270" ignored="false" />
     <file path="/Display.java" changelist="75b5bd26-2fe4-4454-bb3e-2b9f770f4b81" time="1353529090523" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -83,16 +86,25 @@
       <file leaf-file-name="Board.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/bru/game/board/Board.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="70" column="35" selection-start="1416" selection-end="1416" vertical-scroll-proportion="0.0">
+            <state line="32" column="27" selection-start="593" selection-end="593" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SquareBoardTest.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="BoardException.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/bru/game/board/BoardException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="17" selection-start="215" selection-end="215" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SquareBoardTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/bru/game/board/SquareBoardTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="32" selection-start="631" selection-end="631" vertical-scroll-proportion="0.0">
+            <state line="54" column="4" selection-start="1216" selection-end="1216" vertical-scroll-proportion="0.80545455">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -109,10 +121,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Display.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Display.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/bru/game/board/Display.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="34" selection-start="804" selection-end="804" vertical-scroll-proportion="0.7381818">
+            <state line="33" column="34" selection-start="804" selection-end="804" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -139,7 +151,7 @@
       <file leaf-file-name="SquareBoard.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/bru/game/board/SquareBoard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="39" selection-start="184" selection-end="184" vertical-scroll-proportion="0.0">
+            <state line="7" column="36" selection-start="120" selection-end="120" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -175,14 +187,15 @@
         <option value="$PROJECT_DIR$/src/main/java/com/bru/game/board/BoardFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bru/game/board/Boards.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bru/game/board/Lattice.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/bru/game/board/SquareBoard.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bru/game/board/Colour.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bru/game/board/Field.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bru/game/board/Piece.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/bru/game/board/Board.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bru/game/board/Utils.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/bru/game/board/SquareBoardTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bru/game/board/Display.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bru/game/board/SquareBoard.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bru/game/board/BoardException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bru/game/board/Board.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/bru/game/board/SquareBoardTest.java" />
       </list>
     </option>
   </component>
@@ -214,7 +227,7 @@
     <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1" splitterProportion="0.5">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -225,7 +238,88 @@
       <autoscrollFromSource />
       <sortByType />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BoardGame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BoardGame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BoardGame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BoardGame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BoardGame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BoardGame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BoardGame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BoardGame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BoardGame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="board" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
@@ -243,6 +337,94 @@
     <property name="options.searchVisible" value="true" />
   </component>
   <component name="RunManager" selected="JUnit.SquareBoardTest">
+    <configuration default="false" name="SquareBoardTest.testZeroSizeLatticeLevel" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="BoardGame" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.bru.game.board" />
+      <option name="MAIN_CLASS_NAME" value="com.bru.game.board.SquareBoardTest" />
+      <option name="METHOD_NAME" value="testZeroSizeLatticeLevel" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="SquareBoardTest.testZeroSizeLatticeLevelWithCall" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="BoardGame" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.bru.game.board" />
+      <option name="MAIN_CLASS_NAME" value="com.bru.game.board.SquareBoardTest" />
+      <option name="METHOD_NAME" value="testZeroSizeLatticeLevelWithCall" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="SquareBoardTest.testSizeOneLatticeLevel" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="BoardGame" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.bru.game.board" />
+      <option name="MAIN_CLASS_NAME" value="com.bru.game.board.SquareBoardTest" />
+      <option name="METHOD_NAME" value="testSizeOneLatticeLevel" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="SquareBoardTest.testSizeOneLatticeLevelOutOfBoundsPlay" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="BoardGame" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.bru.game.board" />
+      <option name="MAIN_CLASS_NAME" value="com.bru.game.board.SquareBoardTest" />
+      <option name="METHOD_NAME" value="testSizeOneLatticeLevelOutOfBoundsPlay" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
     <configuration default="false" name="SquareBoardTest" type="JUnit" factoryName="JUnit" temporary="true">
       <module name="BoardGame" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -261,13 +443,7 @@
       </option>
       <envs />
       <patterns />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Debug" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
@@ -326,12 +502,20 @@
       <patterns />
       <method />
     </configuration>
-    <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.SquareBoardTest" />
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="JUnit.SquareBoardTest.testZeroSizeLatticeLevel" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.SquareBoardTest.testZeroSizeLatticeLevelWithCall" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.SquareBoardTest.testSizeOneLatticeLevel" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.SquareBoardTest.testSizeOneLatticeLevelOutOfBoundsPlay" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.SquareBoardTest" />
     </list>
     <recent_temporary>
-      <list size="1">
+      <list size="5">
         <item index="0" class="java.lang.String" itemvalue="JUnit.SquareBoardTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.SquareBoardTest.testSizeOneLatticeLevelOutOfBoundsPlay" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.SquareBoardTest.testSizeOneLatticeLevel" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.SquareBoardTest.testZeroSizeLatticeLevelWithCall" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.SquareBoardTest.testZeroSizeLatticeLevel" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -362,7 +546,7 @@
     <task active="true" id="Default" summary="Default task">
       <changelist id="75b5bd26-2fe4-4454-bb3e-2b9f770f4b81" name="Default" comment="" />
       <created>1353255010858</created>
-      <timeSpent>840000</timeSpent>
+      <timeSpent>2284000</timeSpent>
       <updated>1353255010858</updated>
     </task>
     <task id="LOCAL-00001" summary="init">
@@ -389,8 +573,12 @@
       <created>1353529151908</created>
       <updated>1353529151908</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
-    <option name="myTotallyTimeSpent" value="840000" />
+    <task id="LOCAL-00007" summary="test case with asserts">
+      <created>1353529641807</created>
+      <updated>1353529641807</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <option name="myTotallyTimeSpent" value="2284000" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -403,15 +591,15 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.42336875" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35530302" sideWeight="0.3953099" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32996634" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283082" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24905087" sideWeight="0.6700337" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3560606" sideWeight="0.6010101" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24848485" sideWeight="0.6716918" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35530302" sideWeight="0.5929648" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -455,7 +643,7 @@
     <option name="SHOW_DIRTY_RECURSIVELY" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="display toString" />
+    <option name="LAST_COMMIT_MESSAGE" value="test case with asserts" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -474,6 +662,7 @@
     <MESSAGE value="display changes" />
     <MESSAGE value="display enhancements (new Display class)" />
     <MESSAGE value="display toString" />
+    <MESSAGE value="test case with asserts" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -487,13 +676,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bru/game/board/Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="55" selection-start="215" selection-end="215" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bru/game/board/Colour.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="32" selection-start="303" selection-end="303" vertical-scroll-proportion="0.0">
@@ -527,13 +709,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bru/game/board/Board.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="35" selection-start="1416" selection-end="1416" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bru/game/board/Piece.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="31" selection-start="538" selection-end="538" vertical-scroll-proportion="0.0">
@@ -551,13 +726,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bru/game/board/Colour.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="32" selection-start="303" selection-end="303" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bru/game/board/SquareBoard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="39" selection-start="184" selection-end="184" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -583,19 +751,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/bru/game/board/SquareBoardTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bru/game/board/Display.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="32" selection-start="631" selection-end="631" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="33" column="34" selection-start="804" selection-end="804" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bru/game/board/Display.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bru/game/board/SquareBoard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="34" selection-start="804" selection-end="804" vertical-scroll-proportion="0.7381818">
+        <state line="7" column="36" selection-start="120" selection-end="120" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bru/game/board/BoardException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="17" selection-start="215" selection-end="215" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bru/game/board/Board.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="27" selection-start="593" selection-end="593" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/bru/game/board/SquareBoardTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="4" selection-start="1216" selection-end="1216" vertical-scroll-proportion="0.80545455">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
