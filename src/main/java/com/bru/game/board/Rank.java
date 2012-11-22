@@ -9,7 +9,10 @@ package com.bru.game.board;
 public enum Rank {
 	PAWN("P"),
 	KING("K"),
-	QUEEN("K"),
+	ROOK("R"),
+	KNIGHT("N"),
+	BISHOP("B"),
+	QUEEN("Q"),
 	NONE("0");
 	private String display;
 
