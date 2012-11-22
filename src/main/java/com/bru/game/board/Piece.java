@@ -12,18 +12,24 @@ public class Piece {
 	private static final AtomicLong cnt = new AtomicLong();
 	private final long id;
 	private final Colour colour;
-	public static final String EMPTY = "------";     //TODO
+	public static final String EMPTY = "---------";     //TODO
+	public final Rank rank;
 
-	public Piece(Colour colour) {
+	public Piece(final Colour colour, final Rank rank) {
 		this.id = cnt.incrementAndGet();
 		this.colour = colour;
+		this.rank = rank;
 	}
 
 	public String toString() {
-		return String.format("<%s%03d>", colour.getDisplay(), id);
+		return String.format("<%s[%s]%03d>", colour.getDisplay(), rank.getDisplay(), id);
 	}
 
 	public Colour getColour() {
 		return colour;
+	}
+
+	public Rank getRank() {
+		return rank;
 	}
 }

@@ -23,7 +23,8 @@ public class Display {
 				cols = column.length;
 				for (Field row : column) {
 					String colour = row.getPiece() == null ? "-" : row.getPiece().getColour().getDisplay();
-					sb.append("[").append(colour).append("]");
+					String rank = row.getPiece() == null ? "-" : row.getPiece().getRank().getDisplay();
+					sb.append("[").append(colour).append("-").append(rank).append("]");
 				}
 				sb.append("\n");
 			}
@@ -31,8 +32,8 @@ public class Display {
 		}
 		sb.deleteCharAt(sb.length()-1);
 		sb.deleteCharAt(sb.length()-1);
-		sb.append(String.format("\n  %s\n", Utils.repeat("---", cols, "")));
-		sb.append(String.format("   %s\n", Utils.range(0, cols - 1, "  ")));
+		sb.append(String.format("\n  %s\n", Utils.repeat("-----", cols, "")));
+		sb.append(String.format("    %s\n", Utils.range(0, cols - 1, "    ")));
 		return sb.toString();
 	}
 

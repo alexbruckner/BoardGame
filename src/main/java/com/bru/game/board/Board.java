@@ -62,10 +62,10 @@ public abstract class Board {
 		return lookup;
 	}
 
-	public void place(Colour colour, String fieldId) throws BoardException{
+	public void place(Piece piece, String fieldId) throws BoardException{
 		Field field = getLookup().get(fieldId);
 		if (field != null){
-			field.place(new Piece(colour));
+			field.place(piece);
 		} else {
 			throw new BoardException(String.format("Field [%s] is not part of this board.", fieldId));
 		}

@@ -14,21 +14,21 @@ public class SquareBoardTest {
 	@Test
 	public void testBoardDisplay() {
 		Board board = new SquareBoard(4);
-		board.place(Colour.BLACK, "2-2");
-		board.place(Colour.WHITE, "2-3");
-		board.place(Colour.BLACK, "1-2");
+		board.place(new Piece(Colour.BLACK, Rank.KING), "2-2");
+		board.place(new Piece(Colour.WHITE, Rank.NONE), "2-3");
+		board.place(new Piece(Colour.BLACK, Rank.PAWN), "1-2");
 
 		System.out.println(board);
 		Display display = new Display(board);
 		System.out.println(display);
 
 		Assert.assertEquals("" +
-				"0|[-][-][-][-]\n" +
-				"1|[-][-][B][-]\n" +
-				"2|[-][-][B][W]\n" +
-				"3|[-][-][-][-]\n" +
-				"  ------------\n" +
-				"   0  1  2  3  \n", display.toString());
+				"0|[---][---][---][---]\n" +
+				"1|[---][---][B-P][---]\n" +
+				"2|[---][---][B-K][W-0]\n" +
+				"3|[---][---][---][---]\n" +
+				"  --------------------\n" +
+				"    0    1    2    3    \n", display.toString());
 	}
 
 	@Test(expected = BoardException.class)
@@ -43,13 +43,34 @@ public class SquareBoardTest {
 
 	@Test
 	public void testSizeOneLatticeLevel() {
-		Assert.assertEquals("[0-0:------]\n\n", new SquareBoard(1).toString());
+		Assert.assertEquals("[0-0:---------]\n\n", new SquareBoard(1).toString());
 	}
 
 	@Test(expected = BoardException.class)
 	public void testSizeOneLatticeLevelOutOfBoundsPlay() {
 		Board board = new SquareBoard(1);
-		board.place(Colour.BLACK, "2-2");
+		board.place(new Piece(Colour.BLACK, Rank.NONE), "2-2");
 	}
+
+	@Test
+	public void testGameType(){
+		Board board = BoardFactory.newBoard(GameType.CHESS);
+		Display display = new Display(board);
+		System.out.println(display);
+		Assert.assertEquals("" +
+				"0|[B-R][B-N][B-B][B-Q][B-K][B-B][B-N][B-R]\n" +
+				"1|[B-P][B-P][B-P][B-P][B-P][B-P][B-P][B-P]\n" +
+				"2|[---][---][---][---][---][---][---][---]\n" +
+				"3|[---][---][---][---][---][---][---][---]\n" +
+				"4|[---][---][---][---][---][---][---][---]\n" +
+				"5|[---][---][---][---][---][---][---][---]\n" +
+				"6|[W-P][W-P][W-P][W-P][W-P][W-P][W-P][W-P]\n" +
+				"7|[W-R][W-N][W-B][W-Q][W-K][W-B][W-N][W-R]\n" +
+				"  ----------------------------------------\n" +
+				"    0    1    2    3    4    5    6    7    \n", display.toString());
+
+	}
+
+
 
 }
