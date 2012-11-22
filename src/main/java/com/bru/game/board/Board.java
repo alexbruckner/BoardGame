@@ -19,17 +19,17 @@ public abstract class Board {
 		return lattice;
 	}
 
-	private Map<String, Field> getLookup(){
+	private Map<String, Field> getLookup() {
 		init();
 		return lookup;
 	}
 
-	private void init(){
+	private void init() {
 		if (lattice == null) {
 			lattice = createLattice();
 			lookup = createLookup();
 		}
-		if(lattice.getLevels().get(0).getFields().length == 0) {
+		if (lattice.getLevels().get(0).getFields().length == 0) {
 			throw new BoardException("Size of lattice must be at least 1.");
 		}
 	}
@@ -62,17 +62,36 @@ public abstract class Board {
 		return lookup;
 	}
 
-	public void place(Piece piece, String fieldId) throws BoardException{
+	public void place(Piece piece, String fieldId) throws BoardException {
 		Field field = getLookup().get(fieldId);
-		if (field != null){
+		if (field != null) {
 			field.place(piece);
 		} else {
 			throw new BoardException(String.format("Field [%s] is not part of this board.", fieldId));
 		}
 	}
 
-	protected List<Lattice.Level> getLevels(){
+	protected List<Lattice.Level> getLevels() {
 		return getLattice().getLevels();
 	}
 
+	public void move(String fromFieldId, String toFieldId) throws BoardException {
+		Field fromField = getLookup().get(fromFieldId);
+		if (fromField != null) {
+			Piece piece = fromField.getPiece();
+			Field toField = getLookup().get(toFieldId);
+			if (toField != null) {
+				if (toField.getPiece() == null) {
+					fromField.place(null);
+					toField.place(piece);
+				} else {
+					throw new BoardException(String.format("Field [%s] is already taken.", toFieldId));
+				}
+			} else {
+				throw new BoardException(String.format("Field [%s] is not part of this board.", toFieldId));
+			}
+		} else {
+			throw new BoardException(String.format("Field [%s] is not part of this board.", fromFieldId));
+		}
+	}
 }

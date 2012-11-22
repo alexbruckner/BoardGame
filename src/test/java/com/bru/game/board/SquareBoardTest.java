@@ -72,5 +72,28 @@ public class SquareBoardTest {
 	}
 
 
+	@Test
+	//TODO field id mapping for chess board, so that
+	//TODO 		board.move("E-2", "E-4") works as well as board.move("6-4", "4-4");
+	public void testMove(){
+		Board board = BoardFactory.newBoard(GameType.CHESS);
+		board.move("6-4", "4-4");
+		Display display = new Display(board);
+		System.out.println(display);
+		Assert.assertEquals("" +
+				"0|[B-R][B-N][B-B][B-Q][B-K][B-B][B-N][B-R]\n" +
+				"1|[B-P][B-P][B-P][B-P][B-P][B-P][B-P][B-P]\n" +
+				"2|[---][---][---][---][---][---][---][---]\n" +
+				"3|[---][---][---][---][---][---][---][---]\n" +
+				"4|[---][---][---][---][W-P][---][---][---]\n" +
+				"5|[---][---][---][---][---][---][---][---]\n" +
+				"6|[W-P][W-P][W-P][W-P][---][W-P][W-P][W-P]\n" +
+				"7|[W-R][W-N][W-B][W-Q][W-K][W-B][W-N][W-R]\n" +
+				"  ----------------------------------------\n" +
+				"    0    1    2    3    4    5    6    7    \n", display.toString());
+
+	}
+
+
 
 }

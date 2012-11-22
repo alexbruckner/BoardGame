@@ -2,22 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75b5bd26-2fe4-4454-bb3e-2b9f770f4b81" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bru/game/board/GameType.java" afterPath="$PROJECT_DIR$/src/main/java/com/bru/game/board/GameType.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bru/game/board/Rank.java" afterPath="$PROJECT_DIR$/src/main/java/com/bru/game/board/Rank.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bru/game/board/Board.java" afterPath="$PROJECT_DIR$/src/main/java/com/bru/game/board/Board.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/bru/game/board/SquareBoardTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/bru/game/board/SquareBoardTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="BoardGame.iws" />
     <ignored path=".idea/workspace.xml" />
+    <file path="/Board.java" changelist="75b5bd26-2fe4-4454-bb3e-2b9f770f4b81" time="1353623543777" ignored="false" />
+    <file path="/SquareBoardTest.java" changelist="75b5bd26-2fe4-4454-bb3e-2b9f770f4b81" time="1353623060576" ignored="false" />
+    <file path="/Dummy.txt" changelist="75b5bd26-2fe4-4454-bb3e-2b9f770f4b81" time="1353622797126" ignored="false" />
     <file path="/GameType.java" changelist="75b5bd26-2fe4-4454-bb3e-2b9f770f4b81" time="1353622770609" ignored="false" />
     <file path="/Rank.java" changelist="75b5bd26-2fe4-4454-bb3e-2b9f770f4b81" time="1353622521684" ignored="false" />
-    <file path="/Dummy.txt" changelist="75b5bd26-2fe4-4454-bb3e-2b9f770f4b81" time="1353621501350" ignored="false" />
-    <file path="/SquareBoardTest.java" changelist="75b5bd26-2fe4-4454-bb3e-2b9f770f4b81" time="1353621010623" ignored="false" />
     <file path="/Display.java" changelist="75b5bd26-2fe4-4454-bb3e-2b9f770f4b81" time="1353620379048" ignored="false" />
     <file path="/fragment.java" changelist="75b5bd26-2fe4-4454-bb3e-2b9f770f4b81" time="1353619923610" ignored="false" />
     <file path="/Piece.java" changelist="75b5bd26-2fe4-4454-bb3e-2b9f770f4b81" time="1353619914198" ignored="false" />
     <file path="/BoardFactory.java" changelist="75b5bd26-2fe4-4454-bb3e-2b9f770f4b81" time="1353619371274" ignored="false" />
     <file path="/Position.java" changelist="75b5bd26-2fe4-4454-bb3e-2b9f770f4b81" time="1353618942282" ignored="false" />
-    <file path="/Board.java" changelist="75b5bd26-2fe4-4454-bb3e-2b9f770f4b81" time="1353618876318" ignored="false" />
     <file path="/BoardException.java" changelist="75b5bd26-2fe4-4454-bb3e-2b9f770f4b81" time="1353530814445" ignored="false" />
     <file path="/SquareBoard.java" changelist="75b5bd26-2fe4-4454-bb3e-2b9f770f4b81" time="1353531630066" ignored="false" />
     <file path="/Game.java" changelist="75b5bd26-2fe4-4454-bb3e-2b9f770f4b81" time="1353532588488" ignored="false" />
@@ -81,91 +81,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Board.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/bru/game/board/Board.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="33" selection-start="784" selection-end="784" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Game.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/bru/game/board/Game.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="39" selection-start="153" selection-end="153" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BoardFactory.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/bru/game/board/BoardFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="0" selection-start="368" selection-end="368" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GameType.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/bru/game/board/GameType.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="71" selection-start="2424" selection-end="2424" vertical-scroll-proportion="0.8545455">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Position.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/bru/game/board/Position.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="32" selection-start="373" selection-end="373" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="SquareBoardTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/bru/game/board/SquareBoardTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="32" selection-start="1627" selection-end="1627" vertical-scroll-proportion="0.0">
+            <state line="79" column="16" selection-start="2337" selection-end="2337" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Piece.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/bru/game/board/Piece.java">
+      <file leaf-file-name="Board.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/bru/game/board/Board.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="11" selection-start="359" selection-end="359" vertical-scroll-proportion="0.0">
+            <state line="87" column="0" selection-start="2088" selection-end="2088" vertical-scroll-proportion="0.68458784">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Rank.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/bru/game/board/Rank.java">
+      <file leaf-file-name="Field.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/bru/game/board/Field.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="12" selection-start="205" selection-end="205" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Colour.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/bru/game/board/Colour.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="12" selection-start="125" selection-end="125" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Display.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/bru/game/board/Display.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="47" selection-start="322" selection-end="322" vertical-scroll-proportion="0.0">
+            <state line="58" column="17" selection-start="1117" selection-end="1117" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -197,14 +134,14 @@
         <option value="$PROJECT_DIR$/src/main/java/com/bru/game/board/BoardException.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bru/game/board/SquareBoard.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bru/game/board/Game.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/bru/game/board/Board.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bru/game/board/Position.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bru/game/board/BoardFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bru/game/board/Piece.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bru/game/board/Display.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/bru/game/board/SquareBoardTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bru/game/board/Rank.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bru/game/board/GameType.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/bru/game/board/SquareBoardTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bru/game/board/Board.java" />
       </list>
     </option>
   </component>
@@ -560,7 +497,7 @@
     <task active="true" id="Default" summary="Default task">
       <changelist id="75b5bd26-2fe4-4454-bb3e-2b9f770f4b81" name="Default" comment="" />
       <created>1353255010858</created>
-      <timeSpent>10934000</timeSpent>
+      <timeSpent>11729000</timeSpent>
       <updated>1353255010858</updated>
     </task>
     <task id="LOCAL-00001" summary="init">
@@ -607,8 +544,12 @@
       <created>1353621511804</created>
       <updated>1353621511804</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
-    <option name="myTotallyTimeSpent" value="10934000" />
+    <task id="LOCAL-00012" summary="implementation for chess test case">
+      <created>1353622802278</created>
+      <updated>1353622802278</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
+    <option name="myTotallyTimeSpent" value="11729000" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -673,7 +614,7 @@
     <option name="SHOW_DIRTY_RECURSIVELY" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="test case for chess board setup" />
+    <option name="LAST_COMMIT_MESSAGE" value="implementation for chess test case" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -695,6 +636,7 @@
     <MESSAGE value="test case with asserts" />
     <MESSAGE value="Test cases" />
     <MESSAGE value="test case for chess board setup" />
+    <MESSAGE value="implementation for chess test case" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -708,13 +650,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bru/game/board/Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="55" selection-start="215" selection-end="215" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bru/game/board/Lattice.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="30" column="25" selection-start="489" selection-end="489" vertical-scroll-proportion="0.0">
@@ -776,23 +711,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bru/game/board/Board.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="33" selection-start="784" selection-end="784" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bru/game/board/Display.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="47" selection-start="322" selection-end="322" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/bru/game/board/SquareBoardTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="32" selection-start="1627" selection-end="1627" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -813,7 +734,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bru/game/board/GameType.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="71" selection-start="2424" selection-end="2424" vertical-scroll-proportion="0.8545455">
+        <state line="45" column="71" selection-start="2424" selection-end="2424" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/bru/game/board/SquareBoardTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="79" column="16" selection-start="2337" selection-end="2337" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bru/game/board/Field.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="17" selection-start="1117" selection-end="1117" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bru/game/board/Board.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="87" column="0" selection-start="2088" selection-end="2088" vertical-scroll-proportion="0.68458784">
           <folding />
         </state>
       </provider>
